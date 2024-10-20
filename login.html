@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <header>
+      <header>
+        <div class="bg-dark">
+          <div class="header-content text-center p-3">
+                     <a class="navbar-brand " href="index.html" style="font-size: 25px;">HKDrive</a>
+          </div>
+        </div>
+      </header>
+
+<section>
+    <div class="container-fluid sec1-container bg-dark" style="height: 100vh;">
+    <div class="sec1-form p-4 mt-3">
+    <form>
+      <div class="mb-3  me-2">
+        <label  class="form-label text-white">First Name</label>
+        <input type="text" class="form-control input2" id="firstName" >
+        <label class="form-label ms-1 text-white">Last Name</label>
+        <input type="text" class="form-control input2" id="lastName" >
+      </div>
+      <div class="mb-3">
+        <label  class="form-label text-white">Email address</label>
+        <input type="email" class="form-control input1" aria-describedby="emailHelp" id="email">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label text-white">Password</label>
+        <input type="password" class="form-control input1" id="password" name="password" minlength="8" maxlength="16" size="8" required>
+      </div>
+
+      <button type="submit" value= "sign in" id="sign_in" class="p-2 mt-1  border-0" >submit</button>
+
+    </form>
+</div>
+</div>
+</section>
+    
+
+<script src="js/login.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

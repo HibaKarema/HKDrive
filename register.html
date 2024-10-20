@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title> Register Page</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+
+        <header>
+            <div class="bg-dark">
+              <div class="header-content text-center p-3">
+                         <a class="navbar-brand " href="index.html" style="font-size: 25px;">HKDrive</a>
+              </div>
+            </div>
+          </header>
+
+          
+    
+    <section>
+        <div class="container-fluid sec1-container bg-dark" style="height: 100vh;">
+        <div class="sec1-form p-4 ">
+
+        <form>
+          <div class="mb-3">
+            <label  class="form-label text-white">Email address</label>
+            <input type="email" class="form-control input1" id="email" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">HAVE AN ACCOUNT <a href="login.html" style="color:#926326">sign in</a></div>
+          </div>
+          <div class="mb-3">
+            <label  class="form-label text-white">Password</label>
+            <input type="password" class="form-control input1" id="password" name="password" minlength="8" maxlength="16" size="8" required>
+          </div>
+          <div class="mb-3">
+              <input  type="checkbox"  id="flexSwitchCheckChecked" style="display: inline; ">
+              <label class="form-check-label" for="flexSwitchCheckChecked" style="color:#926326">Remember me</label>
+            </div>
+            <input type="submit" value= "sign up" id="sign_up" class="p-2 mt-1  border-0">
+        </form>
+    </div>
+</div>
+    </section>
+    
+
+<script src="js/register.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand  navbar-dark bg-dark " style=" border-bottom:1px solid white;">
+      <div class="container d-flex justify-content-around">
+        <a class="navbar-brand" href="index.html">HKDrive</a>
+        <a href="#" class="nav-link user-name" style="text-decoration:underline; color:rgb(121, 81, 21); font-size:20px;"></a>
+      </div>
+    </nav>
+  </header>
+     <!-- ////////////////////////////////////////////////////////////////////////////////// -->   
+    <section class="bg-dark py-5 productscart-home2 p-5 " style="min-height:100vh;">     
+         <div class="productscart-home2-content">
+            <div class="products">
+               
+         </div>
+         <div class="price-box p-4 text-center bg-dark"  style=" height: 400px;">
+          <h2 class="text-white m-3">Pricing</h2>
+          <div class="h-75 p-3 price-box-info d-flex justify-content-around text-center" style=" background-color:rgb(83, 82, 82); flex-direction: column;">
+            <select id="price-select1" class="d-block w-100 p-2 mb-2">
+              <option value="2025" hidden >Select year</option>
+              <option value="2025">2025-NEW</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+            </select>
+            <input type="text" placeholder="Enter Zip Code" id="price-zip" class="w-100 p-2 mb-2">
+            <div id="total-price" class="p-2 w-50 text-center fw-bolder container"> price :</div>
+          </div>
+         </div>
+      </div>
+    </section> 
+    
+<!-- //////////////////////////////////////////////////// -->
+<!-- Start Cart Favorite -->
+<section class="cart-fav bg-dark py-4 d-md-block d-none">
+  <h2 class="main-title text-center text-white py-2">Favorite</h2>
+  <div id="owl-demo" class="container owl-carousel owl-theme cart-favBoxes p-3"></div>
+</section>
+<!-- End Cart Favorite -->
+
+ <!-- Start Cart Favorite -->
+<section class="cart-fav bg-dark py-4 d-block d-md-none">
+  <h2 class="main-title text-center text-white py-2">Favorite</h2>
+  <div id="owl-demo1" class="container owl-carousel owl-theme cart-favBoxes p-3"></div>
+</section>
+<!-- End Cart Favorite -->
+<!-- /////////////////////////////////////////////////////// -->
+<footer class="bg-dark text-white mt-0 py-5">
+  <hr class="m-0">
+  <div class="container footer-content text-start pt-5">
+    <div>
+      <h2 class="navbar-brand mb-3 footer-header" href="index.html" style="font-size:30px;">HKDrive</h2>
+      <p class="pt-3" style="letter-spacing: 1px;">Justo odio dignissimos ducimus qui blanditiis voluptatum deleniti corrupti quos dolores et quas molestias sint occaecati id est laborumesa etdolorum.</p>
+      <p><a href="#" class="text-decoration-none text-uppercase footer-num" style="color:rgb(119, 81, 24); letter-spacing: 1px;">call center : +397 256 38 00</a></p>
+    </div>
+    <div class="ms-md-4">
+      <h2 class="py-3">Quick links</h2>
+      <ul class="footer-list text-uppercase">
+        <li>on budget</li>
+        <li>on model</li>
+        <li>on needed</li>
+        <li>on engine </li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="py-3">Our Services</h2>
+      <ul class="footer-list text-uppercase">
+        <li>Corporate travels</li>
+        <li>Special events</li>
+        <li>Airport transport</li>
+        <li>Wedding limousine</li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <p class="container text-white" style="letter-spacing: 1px;">&copy; All Rights Received</p>
+</footer>
+<!-- /////////////////////////////////////////////////////////// -->
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+
+<script>
+  $(document).ready(function () {
+    $("#owl-demo").owlCarousel({
+      autoPlay: 1000, 
+      items: 3,
+      margin: 15,
+      itemsDesktop: [1199, 3],
+      itemsDesktopSmall: [979, 3],
+    });
+  });
+
+  $(document).ready(function () {
+    $("#owl-demo1").owlCarousel({
+      autoPlay: 1000, 
+      items: 1,
+      margin: 15,
+      itemsDesktop: [1199, 3],
+      itemsDesktopSmall: [979, 3],
+    });
+  });
+</script>
+
+
+
+    <script src="js/productscart.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

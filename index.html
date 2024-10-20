@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark " style=" border-bottom:1px solid white;">
+        <div class="container" >
+          <a class="navbar-brand" href="index.html">HKDrive</a>
+          <a class="text-center fw-bold user-info1 text-decoration-none"  href="https://hibakarema.github.io/Together-Against-Cancer/" style="color: white; font-weight: 700; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Thanks Our Team</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarToggleExternalContent">
+            <ul class="navbar-nav " id="ul1">
+
+              <li class="nav-item"> 
+                <ul class="user-info">
+                  <li class=" text-black-50 the-cart border-0" >
+                   
+                   <i class="fas fa-shopping-cart nav-icons"></i>
+                   <span class="cart-badge"></span><span class="mx-2 cart-span2" style="color:white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">cart</span><i class="fas fa-caret-down "  style="color:rgb(185, 183, 183)"></i>            
+                   <div class="selected-products p-2 ">
+                     <div class="selected-box"></div>
+                     <a href="productscart.html" id="btn-view-PSelect" class="p-2" style="border-top: 1px solid white; color: white;">view all products</a>
+                   </div>
+                  </li>
+                  <li>
+                  <i class="far fa-user ms-md-4 nav-icons nav-icons2" ></i>
+                 <a href="#" class="nav-link" id="log-out" style="color:white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; display: inline;">log out</a>
+               </li>
+              </ul>
+              </li>
+              
+              <li class="nav-item" >
+                <ul class="d-md-flex" id="links">
+                  <li><a href="login.html" class="text-white">Sing in</a></li>
+                  <li><a href="register.html" class=" ms-lg-3 text-white">Sign up</a></li>
+              </ul>
+              </li>
+            </ul>
+          </nav>
+          </div><!-- navbar-collapse -->
+        </div>
+    </header>
+    <!-- ////////////////////////////////////////////////////////////////////////////////// -->   
+    <div class="home2-slider">
+      <div class="home2-text-info text-light">
+        <h2 class="">Do You Need To Rent A Car?<br>
+          See Our Offers ...</h2>
+      </div>
+      <img src="images/c1.avif" alt="img 1" class="home2-slide">
+      <img src="images/c2.avif" alt="img 2" class="home2-slide">
+      <img src="images/c3.avif" alt="img 3" class="home2-slide">
+      <img src="images/car1.avif" alt="img 4" class="home2-slide">
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->    
+    <section>
+      <div class="bg-dark pt-5 text-center" >
+        <ul><li class="text-white text-start ms-5" id="home3-here" style="font-size: 20px;">Here are some courses on business and entrepreneurship : </li></ul>
+        <select id="search-type" class="p-1 m-1" style="width: 45%;">
+          <option hidden>Search Type</option>
+            <option value="category">BY type</option>
+            <option value="title">BY name</option>
+        </select>
+        <input type="text" id="search-input" placeholder="search" class="p-1 m-1" style="width: 45%; outline: 0;">
+    </div>
+    </section>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="pt-5 bg-dark" >
+      <div class="container pb-5">
+        <div class="home4-products container" id="products-container" style="position:relative"> </div>
+      </div>
+  </section> 
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <footer class="bg-dark text-white mt-0 py-5">
+      <hr class="m-0">
+      <div class="container footer-content text-start pt-5">
+        <div>
+          <h2 class="navbar-brand mb-3 footer-header" href="index.html" style="font-size:30px;">HKDrive</h2>
+          <p class="pt-3" style="letter-spacing: 1px;">Justo odio dignissimos ducimus qui blanditiis voluptatum deleniti corrupti quos dolores et quas molestias sint occaecati id est laborumesa etdolorum.</p>
+          <p><a href="#" class="text-decoration-none text-uppercase footer-num" style="color:rgb(119, 81, 24); letter-spacing: 1px;">call center : +397 256 38 00</a></p>
+        </div>
+        <div class="ms-md-4">
+          <h2 class="py-3">Quick links</h2>
+          <ul class="footer-list text-uppercase">
+            <li>on budget</li>
+            <li>on model</li>
+            <li>on needed</li>
+            <li>on engine </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="py-3">Our Services</h2>
+          <ul class="footer-list text-uppercase">
+            <li>Corporate travels</li>
+            <li>Special events</li>
+            <li>Airport transport</li>
+            <li>Wedding limousine</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="container text-white" style="letter-spacing: 1px;">&copy; All Rights Received</p>
+    </footer>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <script src="js/script.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
